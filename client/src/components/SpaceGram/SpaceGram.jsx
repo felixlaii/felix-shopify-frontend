@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import { nasaEndPoint } from "../../utils/nasaAPI";
+import SpaceList from '../SpaceList/SpaceList';
 
 export default class SpaceGram extends Component {
     state = {
@@ -18,7 +19,7 @@ export default class SpaceGram extends Component {
     render() {
         return (
             <div>
-                
+                <SpaceList nasa={this.state.nasa} />
             </div>
         )
     }
