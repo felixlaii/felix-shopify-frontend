@@ -1,5 +1,24 @@
 .space-item {
+    &__card {
+        width: 30vw;
+        margin-bottom: 3rem;
+        border: 2px solid #000000;
+        padding-left: 2rem;
+        padding-top: 1rem;
+        border-radius: 6px;
+    }
+
+    &__details {
+        width: 28vw;
+    }
+
+    &__list {
+        list-style: none;
+    }
     &__image {
-        object-fit: fill;
+        object-fit: cover;
+        height: 28vh;
+        width: 28vw;
+        border-radius: 6px;
     }
 }
