@@ -8,7 +8,7 @@ function SpaceItem({ title, id, img, description, date }) {
       <div className="space-item__wrapper">
         <div className="space-item__card">
           <li className="space-item__list">
-          <p className="space-item__description">{title}</p>
+            <p className="space-item__description">{title}</p>
             <div className="space-item__picture">
               <img className="space-item__image" src={img} alt="rover" />
             </div>

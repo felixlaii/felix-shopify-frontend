@@ -1,0 +1,15 @@
+.like-button {
+    &__metrics {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        width: 1.5vw;
+        height: 1.5vh;
+    }
+
+    &__counter {
+        padding-left: 0.5rem;
+    }
+}
