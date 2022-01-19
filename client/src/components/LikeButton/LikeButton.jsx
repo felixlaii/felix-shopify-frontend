@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import likesDisabled from "../../assets/icons/likes-disabled.png";
-import likesEnabled from "../../assets/icons/likes.png"
+import likesEnabled from "../../assets/icons/likes.png";
 import "./likeButton.scss";
 
 export default class LikeButton extends Component {
@@ -30,14 +30,11 @@ export default class LikeButton extends Component {
   render() {
     return (
       <div className="like-button">
-        {/* <p className="like-button__icon" onClick={this.updateLikes}>
-          Like
-        </p> */}
         <div className="like-button__metrics">
           <img
             className="like-button__icon"
             onClick={this.updateLikes}
-            src={likesDisabled}
+            src={this.state.likes ? likesEnabled : likesDisabled}
             alt="like icon"
           />
 
